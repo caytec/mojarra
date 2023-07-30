@@ -41,9 +41,8 @@ public final class CompositeLibrary extends AbstractTagLibrary {
         // The interface section
         addTagHandler("interface", InterfaceHandler.class);
 
-        // Things that go insead of the interface section
+        // Things that go inside of the interface section
         addTagHandler("attribute", AttributeHandler.class);
-        addTagHandler("extension", ExtensionHandler.class);
         addTagHandler("editableValueHolder", EditableValueHolderAttachedObjectTargetHandler.class);
         addTagHandler("actionSource", ActionSource2AttachedObjectTargetHandler.class);
         addTagHandler("valueHolder", ValueHolderAttachedObjectTargetHandler.class);
